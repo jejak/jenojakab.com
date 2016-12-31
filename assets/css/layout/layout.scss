@@ -1,0 +1,116 @@
+// html {
+//   background: url(img/spanishpoint-ireland.jpg) no-repeat center center fixed;
+//   background-size: cover;
+// }
+
+body {
+  // font-size: 133%;
+  //background-color: $white;
+  // display: table;
+  background: url(/img/spanishpoint-midwest-ireland.jpg) no-repeat center center fixed;
+  background-size: cover;
+  // background-color: #2d89da;
+  //@include dont-break-out();
+
+  .row {
+    //background-image: url(img/SpanishPoint-Ireland.jpg) no-repeat center center fixed;
+    background-color: transparent;
+  }
+
+  .columns {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+//    background-image: url(img/SpanishPoint-Ireland.jpg) no-repeat center center fixed;
+//    background-size: cover;
+  }
+}
+
+.content {
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  // display: table-row;
+  // vertical-align: middle;
+  //background-image: url(img/spanishpoint-ireland.jpg) no-repeat center center fixed;
+  //background-size: cover;
+  //color: $white;
+  background-color: rgba($white, 0.6);
+  //background-color: white;
+  padding: 1rem;
+
+  max-width: $layout_site_max_width;
+  margin-left: auto ;
+  margin-right: auto ;
+
+  font-family: serif;
+  text-align: justify;
+  @include breakpoint(small down) {
+    text-align: none;
+  }
+
+  h1 {
+    text-shadow: 2px 3px 2px #990000;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    //color: $alert_color;
+    // color: $primary_color;
+    color: $colorscheme_color_3;
+    @include breakpoint(small down) {
+      font-size: 2.6rem;
+    }
+
+    a {
+      color: $colorscheme_color_3;
+    }
+
+    a:hover {
+      color: $alert_color;
+    }
+  }
+
+  h2 {
+    font-weight: bolder;
+    //color: $secondary_color;
+    //color: $dark_gray_color;
+    color: $colorscheme_color_5;
+    @include breakpoint(small down) {
+      font-size: 1.4rem;
+    }
+  }
+
+  h3 {
+    font-weight: bolder;
+    // color: $alert_color;
+    color: $colorscheme_color_5;
+    @include breakpoint(small down) {
+      font-size: 1.2rem;
+    }
+  }
+
+  a {
+    color: $colorscheme_color_1;
+  }
+
+  a:hover {
+    color: $alert_color;
+  }
+
+  p {
+    // color: $colorscheme_color_4;
+    color: $black;
+    font-weight:550;
+    font-size: 133%;
+    @include breakpoint(small down) {
+      font-size: 100%;
+    }
+  }
+
+  i {
+    font-weight: bolder;
+    font-size: 300%;
+
+    @include breakpoint(small down) {
+      font-size: 260%;
+    }
+  }
+
+}

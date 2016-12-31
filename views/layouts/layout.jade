@@ -1,0 +1,21 @@
+doctype html
+html(class='no-js', lang='en')
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='Jeno Jakab Software Engineer, Developer, Programmer & Coffee Enthusiast')
+    meta(name='author', content= "Jeno Jakab")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    block title
+      | Jeno Jakab | Software Engineer, Developer, Programmer
+    != css()
+    link(rel='stylesheet', href='foundation-icons/foundation-icons.css')
+
+  body
+    .row
+      .small-12.columns
+        .content
+          block content
+
+    != js()
