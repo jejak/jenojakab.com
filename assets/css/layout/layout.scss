@@ -34,6 +34,9 @@ body {
   //background-size: cover;
   //color: $white;
   background-color: rgba($white, 0.6);
+  @include breakpoint(small down) {
+    background-color: rgba($white, 1);
+  }
   //background-color: white;
   padding: 1rem;
 
@@ -82,7 +85,7 @@ body {
     // color: $alert_color;
     color: $colorscheme_color_5;
     @include breakpoint(small down) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -100,7 +103,8 @@ body {
     font-weight:550;
     font-size: 133%;
     @include breakpoint(small down) {
-      font-size: 100%;
+      font-size: 120%;
+      //font-weight:600;
     }
   }
 
@@ -112,5 +116,12 @@ body {
       font-size: 260%;
     }
   }
-
+  @include breakpoint(small down) {
+    .fi-social-linkedin {
+      float: left;
+    }
+    .fi-mail {
+      float: right;
+    }
+  }
 }
