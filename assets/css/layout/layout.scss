@@ -34,9 +34,6 @@ body {
   //background-size: cover;
   //color: $white;
   background-color: rgba($white, 0.6);
-  @include breakpoint(small down) {
-    background-color: rgba($white, 1);
-  }
   //background-color: white;
   padding: 1rem;
 
@@ -106,6 +103,11 @@ body {
       font-size: 120%;
       //font-weight:600;
     }
+    @include breakpoint(small down) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      background-color: rgba($white, 0.8);
+    }
   }
 
   i {
@@ -123,5 +125,9 @@ body {
     .fi-mail {
       float: right;
     }
+  }
+
+  .media-links {
+    padding-bottom: 1rem;
   }
 }
