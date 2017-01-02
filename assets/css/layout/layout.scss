@@ -4,16 +4,11 @@
 // }
 
 body {
-  // font-size: 133%;
-  //background-color: $white;
-  // display: table;
   background: url(/img/spanishpoint-midwest-ireland.jpg) no-repeat center center fixed;
   background-size: cover;
-  // background-color: #2d89da;
-  //@include dont-break-out();
+  background-attachment: fixed;
 
   .row {
-    //background-image: url(img/SpanishPoint-Ireland.jpg) no-repeat center center fixed;
     background-color: transparent;
   }
 
@@ -21,21 +16,14 @@ body {
     padding: 0;
     margin: 0;
     background-color: transparent;
-//    background-image: url(img/SpanishPoint-Ireland.jpg) no-repeat center center fixed;
-//    background-size: cover;
   }
 }
 
 .content {
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-  // display: table-row;
-  // vertical-align: middle;
-  //background-image: url(img/spanishpoint-ireland.jpg) no-repeat center center fixed;
-  //background-size: cover;
-  //color: $white;
-  background-color: rgba($white, 0.6);
-  //background-color: white;
-  padding: 1rem;
+  box-shadow: 0px 5px 5px 3px rgba(whitesmoke,0.75);
+  background-color: transparent;
+  padding: 0.5rem;
+  //margin-bottom: 4rem;
 
   max-width: $layout_site_max_width;
   margin-left: auto ;
@@ -48,39 +36,44 @@ body {
   }
 
   h1 {
-    text-shadow: 2px 3px 2px #990000;
-    font-weight: bolder;
-    font-size: 3.5rem;
-    //color: $alert_color;
-    // color: $primary_color;
     color: $colorscheme_color_3;
+    text-shadow: 1px 1px 1px #990000;
+    font-size: 3.5rem;
     @include breakpoint(small down) {
       font-size: 2.6rem;
     }
 
     a {
-      color: $colorscheme_color_3;
+      //color: $colorscheme_color_3;
+      color: $alert_color;
+      // text-shadow: 1px 1px 2px darkblue, 0 0 25px orange, 0 0 5px darkred;
+      //text-shadow: 1px 2px 2px red, 0 0 25px orange, 0 0 5px darkred;
+
+      text-shadow: 1px 2px 2px black, 0 0 25px $colorscheme_color_1, 0 0 5px darkred;
     }
 
     a:hover {
       color: $alert_color;
+      font-weight: bolder;
     }
   }
 
   h2 {
-    font-weight: bolder;
-    //color: $secondary_color;
-    //color: $dark_gray_color;
-    color: $colorscheme_color_5;
+    font-weight: bold;
+    //color: $colorscheme_color_3;
+    color: $white;
+    text-shadow: 1px 2px 2px black, 0 0 25px yellow, 0 0 5px darkblue;
     @include breakpoint(small down) {
       font-size: 1.4rem;
     }
   }
 
   h3 {
-    font-weight: bolder;
+    font-weight: bold;
     // color: $alert_color;
-    color: $colorscheme_color_5;
+    // color: $colorscheme_color_5;
+    color: $white;
+    text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px darkblue;
     @include breakpoint(small down) {
       font-size: 1.3rem;
     }
@@ -92,21 +85,21 @@ body {
 
   a:hover {
     color: $alert_color;
+    font-weight: normal;
   }
 
-  p {
-    // color: $colorscheme_color_4;
-    color: $black;
+  .text {
+    // color: $colorscheme_color_5;
+    color: black;
     font-weight:550;
     font-size: 133%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(seashell, 0.7);
     @include breakpoint(small down) {
       font-size: 120%;
       //font-weight:600;
-    }
-    @include breakpoint(small down) {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      background-color: rgba($white, 0.8);
     }
   }
 
@@ -115,9 +108,10 @@ body {
     font-size: 300%;
 
     @include breakpoint(small down) {
-      font-size: 260%;
+      font-size: 460%;
     }
   }
+
   @include breakpoint(small down) {
     .fi-social-linkedin {
       float: left;
@@ -128,6 +122,7 @@ body {
   }
 
   .media-links {
-    padding-bottom: 1rem;
+    margin-bottom: 5rem;
+    background-color: transparent;
   }
 }
