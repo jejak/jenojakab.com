@@ -3,7 +3,17 @@ js_pipeline         = require 'js-pipeline'
 css_pipeline        = require 'css-pipeline'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: [
+    'readme.md',
+    'assets/css/base/**/*',
+    'assets/css/layout/**/*',
+    'assets/css/mixins/**/*',
+    '**/layout.*',
+    '**/_*',
+    '**/manifest.yml',
+    '.gitignore',
+    'ship.*conf'
+  ]
 
   extensions: [
     js_pipeline(manifest: 'assets/js/manifest.yml'),
@@ -11,7 +21,7 @@ module.exports =
   ]
 
   'coffee-script':
-    sourcemap: false
+    sourcemap: true
 
   jade:
     pretty: true
