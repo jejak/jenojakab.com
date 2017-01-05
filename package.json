@@ -1,6 +1,7 @@
 {
   "name": "jenojakab.com",
   "description": "jenojakab developer landing page",
+  "author": "Jeno Jakab",
   "dependencies": {
     "autoprefixer": "6.3.6",
     "coffee-script": "1.0.0",
