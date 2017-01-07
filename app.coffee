@@ -29,5 +29,5 @@ module.exports =
 
   postcss:
     use: [
-      autoprefixer({ browsers: ['IE 6','Chrome 9', 'Firefox 14']})
+      autoprefixer
     ]

@@ -25,3 +25,8 @@ module.exports =
 
   jade:
     pretty: true
+
+  postcss:
+    use: [
+      autoprefixer
+    ]
