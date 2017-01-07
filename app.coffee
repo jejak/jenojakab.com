@@ -5,6 +5,7 @@ css_pipeline        = require 'css-pipeline'
 module.exports =
   ignores: [
     'readme.md',
+    'license.md',
     'assets/css/base/**/*',
     'assets/css/layout/**/*',
     'assets/css/mixins/**/*',
@@ -25,3 +26,8 @@ module.exports =
 
   jade:
     pretty: true
+
+  postcss:
+    use: [
+      autoprefixer({ browsers: ['IE 6','Chrome 9', 'Firefox 14']})
+    ]

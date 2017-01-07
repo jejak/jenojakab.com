@@ -10,7 +10,8 @@
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "^1.0.0",
     "marked": "0.3.x",
-    "node-sass": "3.4.2"
+    "node-sass": "3.4.2",
+    "postcss": "^5.2.8"
   },
   "license": "MIT",
   "repository": {
